@@ -1,0 +1,9 @@
+.nav,
+.pagination,
+.carousel,
+.panel-title a {
+  cursor: pointer;
+}
+.avatar {
+  margin: -5px 4px;
+}
