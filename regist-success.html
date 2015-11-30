@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-CN" ng-app="myApp">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>BIGLUOBO</title>
+
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.min.js"></script>
+    <script src="http://cdn.bootcss.com/angular-ui-bootstrap/0.14.3/ui-bootstrap-tpls.min.js"></script>
+    <script src="app.js"></script>
+
+    <link href="http://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body class="homeBg">
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-3" ng-click="isCollapsed = !isCollapsed">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Brand</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li class="active" ><a href="#">首页</a></li>
+                <li><a href="#">职位</a></li>
+                <li><a href="#">兔子</a></li>
+                <li><a href="#">企业合作</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown" uib-dropdown>
+                    <a role="button" id="simple-dropdown" class="dropdown-toggle" uib-dropdown-toggle>
+                        <img src="img/avatar.jpg" alt="" class="avatar img-circle" width="30"/> hr@bigluobo.com <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu uib-dropdown-menu" aria-labelledby="simple-dropdown">
+                        <li><a href="#">个人设置</a></li>
+                        <li><a href="#">公司主页</a></li>
+                        <li><a href="#">控制台</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+
+<div class="container">
+    <div class="register">
+        <!-- Tab panes -->
+        <div class="nav">
+            <h3>激活帐号</h3>
+        </div>
+        <div class="tab-content">
+            <blockquote>
+            <p>请登录注册邮箱后点击邮件中验证链接后继续注册。</p></blockquote>
+            <a href="">用户点击链接登录网站， 进入到 HR-Register-2 页面</a>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>

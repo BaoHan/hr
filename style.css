@@ -4,6 +4,78 @@
 .panel-title a {
   cursor: pointer;
 }
+a,
+.animation {
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+body.homeBg {
+  background-image: url('img/homeBg.jpg');
+  background-repeat: repeat;
+  min-height: 100%;
+}
 .avatar {
   margin: -5px 4px;
+}
+.register {
+  max-width: 360px;
+  width: 98%;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 6px;
+  border: 1px solid #eee;
+  overflow: hidden;
+  margin-top: 10%;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+.register .nav {
+  background: #489A1D;
+  border: 0;
+}
+.register .nav h3 {
+  color: #fff;
+  font-size: 16px;
+  line-height: 50px;
+  margin: 0;
+  text-align: center;
+}
+.register .nav li {
+  width: 50%;
+  border: 0;
+  text-align: center;
+  margin: 0;
+}
+.register .nav li a {
+  color: #fff;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  display: block;
+  border-radius: 0;
+  font-size: 16px;
+  line-height: 50px;
+}
+.register .nav li a:hover {
+  border: 0;
+}
+.register .nav li:hover a,
+.register .nav li:focus a,
+.register .nav li.active > a {
+  border: 0;
+  background: #5BBA2A;
+  color: #fff;
+}
+.register .tab-content {
+  padding: 20px;
+}
+.register .mobile-valid {
+  padding: 0 15px;
+  cursor: pointer;
+}
+.register .btn-register {
+  margin-top: 10px;
 }

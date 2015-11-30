@@ -1,1 +1,6 @@
-angular.module('myModule', ['ui.bootstrap','ngAnimate']);
+'use strict';
+
+angular.module('myApp', [
+    'ui.bootstrap',
+    'ngAnimate'
+]);
