@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="zh-CN" ng-app="myApp">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>BIGLUOBO</title>
+
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.min.js"></script>
+    <script src="http://cdn.bootcss.com/angular-ui-bootstrap/0.14.3/ui-bootstrap-tpls.min.js"></script>
+    <script src="app.js"></script>
+
+    <link href="http://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-3" ng-click="isCollapsed = !isCollapsed">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Brand</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li class="active" ><a href="#">首页</a></li>
+                <li><a href="#">职位</a></li>
+                <li><a href="#">兔子</a></li>
+                <li><a href="#">企业合作</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown" uib-dropdown>
+                    <a role="button" id="simple-dropdown" class="dropdown-toggle" uib-dropdown-toggle>
+                        <img src="img/avatar.jpg" alt="" class="avatar img-circle" width="30"/> hr@bigluobo.com <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu uib-dropdown-menu" aria-labelledby="simple-dropdown">
+                        <li><a href="#">个人设置</a></li>
+                        <li><a href="#">公司主页</a></li>
+                        <li><a href="#">控制台</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+
+<div class="container">
+    <div class="content">
+        <!-- Tab panes -->
+        <div class="nav">
+            <h3>完善资料</h3>
+        </div>
+        <div class="inner">
+            <form class="form-horizontal">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group row">
+                            <label for="" class="col-sm-4 control-label">＊公司全称：</label>
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control" id="" placeholder="请使用公司营业执照上一致的公司"  required>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="" class="col-sm-4 control-label">＊公司简称：</label>
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control" id="" placeholder="" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group row">
+                            <label for="" class="col-sm-4 control-label">公司LOGO：</label>
+                            <div class="col-sm-8">
+                                <input type="file" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group row">
+                            <label for="" class="col-sm-4 control-label">＊城市：</label>
+                            <div class="col-sm-8">
+                                <select name="" id="" class="form-control">
+                                    <option value="">上海</option>
+                                    <option value="">北京</option>
+                                    <option value="">广东</option>
+                                    <option value="">深圳</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="" class="col-sm-4 control-label">＊总部地址：</label>
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control" id="" placeholder="" required>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="" class="col-sm-4 control-label">＊融资阶段：</label>
+                            <div class="col-sm-8">
+                                <select name="" id="" class="form-control">
+                                    <option value=""></option>
+                                    <option value=""></option>
+                                    <option value=""></option>
+                                    <option value=""></option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group row">
+                            <label for="" class="col-sm-4 control-label">投资机构：</label>
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control" id="" placeholder="">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="" class="col-sm-4 control-label">＊规模：</label>
+                            <div class="col-sm-8">
+                                <select name="" id="" class="form-control">
+                                    <option value="">5-10人</option>
+                                    <option value="">10-50人</option>
+                                    <option value="">50-100人</option>
+                                    <option value="">100人以上</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="" class="col-sm-4 control-label">价值观：</label>
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control" id="" placeholder="">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="" class="col-sm-4 control-label">主页：</label>
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control" id="" placeholder="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group row">
+                            <label for="" class="col-sm-4 control-label">投资金额：</label>
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control" id="" placeholder="">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="" class="col-sm-4 control-label">＊公司联系人：</label>
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control" id="" placeholder="">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="" class="col-sm-4 control-label">＊公司联系电话：</label>
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control" id="" placeholder="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group">
+                        <label for="" class="col-sm-2 control-label">*领域：</label>
+                        <div class="col-sm-10">
+                            <ul class="tags row">
+                                <li class="col-sm-2 active">移动互联网</li>
+                                <li class="col-sm-2">电子商务</li>
+                                <li class="col-sm-2 active">O2O</li>
+                                <li class="col-sm-2 active">O2O</li>
+                                <li class="col-sm-2 disable">移动互联网</li>
+                                <li class="col-sm-2 disable">电子商务</li>
+                            </ul>
+                            <span id="helpBlock" class="help-block"> 您可以选择3个领域</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group">
+                        <label for="" class="col-sm-2 control-label">＊公司介绍：</label>
+                        <div class="col-sm-9">
+                            <textarea class="form-control" rows="3" required></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="" class="col-sm-2 control-label">创始团队介绍：</label>
+                        <div class="col-sm-9">
+                            <textarea class="form-control" rows="3" ></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="" class="col-sm-2 control-label">＊产品介绍：</label>
+                        <div class="col-sm-9">
+                            <textarea class="form-control" rows="3" required></textarea>
+                        </div>
+                    </div>
+                </div>
+                <hr/>
+                <div class="row">
+                    <p class="col-md-12">上传公司图片：</p>
+                    <link rel="stylesheet" type="text/css" href="bower_components/webuploader/webuploader.css">
+                    <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+                    <script type="text/javascript" src="bower_components/webuploader/webuploader.js"></script>
+                    <script type="text/javascript" src="upload.js"></script>
+                    <div id="uploader">
+                        <div class="queueList">
+                            <div id="dndArea" class="placeholder">
+                                <div id="filePicker"></div>
+                                <p>或将照片拖到这里，单次最多可选300张</p>
+                            </div>
+                        </div>
+                        <div class="statusBar" style="display:none;">
+                            <div class="progress">
+                                <span class="text">0%</span>
+                                <span class="percentage"></span>
+                            </div><div class="info"></div>
+                            <div class="btns">
+                                <div id="filePicker2"></div><div class="uploadBtn">开始上传</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <hr/>
+                <div class="form-group">
+                    <div class="col-sm-offset-4 col-sm-4">
+                        <button type="submit" class="btn btn-default btn-block btn-lg btn-success btn-register">下一步：验证公司信息</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>
