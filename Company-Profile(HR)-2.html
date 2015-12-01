@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="zh-CN" ng-app="myApp">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>BIGLUOBO</title>
+
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.min.js"></script>
+    <script src="http://cdn.bootcss.com/angular-ui-bootstrap/0.14.3/ui-bootstrap-tpls.min.js"></script>
+    <script src="app.js"></script>
+
+    <link href="http://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-3" ng-click="isCollapsed = !isCollapsed">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Brand</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li class="active" ><a href="#">首页</a></li>
+                <li><a href="#">职位</a></li>
+                <li><a href="#">兔子</a></li>
+                <li><a href="#">企业合作</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown" uib-dropdown>
+                    <a role="button" id="simple-dropdown" class="dropdown-toggle" uib-dropdown-toggle>
+                        <img src="img/avatar.jpg" alt="" class="avatar img-circle" width="30"/> hr@bigluobo.com <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu uib-dropdown-menu" aria-labelledby="simple-dropdown">
+                        <li><a href="#">个人设置</a></li>
+                        <li><a href="#">公司主页</a></li>
+                        <li><a href="#">控制台</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+
+<div class="container">
+    <div class="content">
+        <!-- Tab panes -->
+        <div class="nav">
+            <h3>企业认证</h3>
+        </div>
+        <div class="inner">
+            <p>
+                企业信息认证<br/>
+                企业信息认证要求：<br/>
+                1. 公司全称应与营业执照一致<br/>
+                2. 请上载有效年检期内的《企业法人营业执照》副本扫描件<br/>
+                3. 网址网址是真实有效的公司网站
+            </p>
+            <form class="form-horizontal">
+                <hr/>
+                <div class="img-upper uploader">
+
+                    <div class="text">
+                        <input type="file" />
+                        <div class="col-md-3">
+                            <i class="glyphicon glyphicon-cloud-upload"></i>
+                        </div>
+                        <div class="cool-md-9">
+                            <h3>上传公司营业执照副本</h3>
+                            <p>支持JPG,PNG,GIF,PDF格式，文件不超过10MB</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <hr/>
+                <div class="form-group">
+                    <div class="col-sm-offset-4 col-sm-4">
+                        <button type="submit" class="btn btn-default btn-block btn-lg btn-success btn-register">提交认证</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="content">
+        <!-- Tab panes -->
+        <div class="nav">
+            <h3>企业认证(审核中)</h3>
+        </div>
+        <div class="inner">
+            <p>
+                已经提交认证信息， 客服团队会在第一时间审批过后邮件通知您
+            </p>
+            <form class="form-horizontal">
+                <hr/>
+                <div class="form-group">
+                    <div class="col-sm-offset-4 col-sm-4">
+                        <button type="submit" class="btn btn-default btn-block btn-lg btn-success btn-register">重新上传</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="content">
+        <!-- Tab panes -->
+        <div class="nav">
+            <h3>企业认证(已审核)</h3>
+        </div>
+        <div class="inner">
+            <p>
+                恭喜您，您的信息已通过认证。
+            </p>
+            <form class="form-horizontal">
+                <hr/>
+                <div class="form-group">
+                    <div class="col-sm-offset-4 col-sm-4">
+                        <button type="submit" class="btn btn-default btn-block btn-lg btn-success btn-register">返回</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="content">
+        <!-- Tab panes -->
+        <div class="nav">
+            <h3>企业认证(认证失败)</h3>
+        </div>
+        <div class="inner">
+            <p>
+                您的企业信息未通过认证， 原因如下:<br/>
+            <hr/>
+                <b>备注：营业执照看不清楚</b>
+
+            </p>
+            <form class="form-horizontal">
+                <hr/>
+                <div class="form-group">
+                    <div class="col-sm-offset-4 col-sm-4">
+                        <button type="submit" class="btn btn-default btn-block btn-lg btn-success btn-register">重新上传</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>

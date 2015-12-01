@@ -132,12 +132,9 @@ a,
   background: #fcfcfc;
   cursor: not-allowed;
 }
-＃uploader {
+#uploader {
   margin: 20px;
   background: #f5f5f5;
-}
-#uploader .queueList {
-  margin: 20px;
 }
 .element-invisible {
   position: absolute !important;
@@ -444,4 +441,38 @@ a,
 #uploader .statusBar .btns .uploadBtn.disabled {
   pointer-events: none;
   opacity: 0.6;
+}
+.img-upper {
+  background-color: #f5f5f5;
+  padding: 50px;
+}
+.img-upper .text {
+  margin: 0px auto;
+  overflow: hidden;
+  background: #00a2d4;
+  color: #fff;
+  padding: 40px;
+  position: relative;
+  max-width: 600px;
+}
+.img-upper .text input {
+  position: absolute;
+  width: 100%;
+  cursor: pointer;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+}
+.img-upper .text h3 {
+  margin: 0;
+}
+.img-upper .text p {
+  margin: 0;
+}
+.img-upper .text i {
+  text-align: center;
+  font-size: 40px;
+  float: right;
 }
