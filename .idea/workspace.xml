@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1b340ae0-a46e-4b2e-b3f3-567f8862954a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hr-main.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/quotation.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style.css" afterPath="$PROJECT_DIR$/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style.less" afterPath="$PROJECT_DIR$/style.less" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -36,14 +36,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.less" pinned="false" current-in-tab="true">
+      <file leaf-file-name="style.less" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/style.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.20951156">
-              <caret line="760" column="19" selection-start-line="760" selection-start-column="19" selection-end-line="760" selection-end-column="19" />
+            <state vertical-scroll-proportion="-20.625">
+              <caret line="717" column="16" selection-start-line="717" selection-start-column="16" selection-end-line="717" selection-end-column="16" />
               <folding>
-                <element signature="e#12324#13509#0" expanded="false" />
-                <element signature="e#13529#14397#0" expanded="false" />
+                <element signature="e#13712#14580#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -53,7 +52,17 @@
         <entry file="file://$PROJECT_DIR$/hr-main.html">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-23.041666">
-              <caret line="144" column="33" selection-start-line="144" selection-start-column="33" selection-end-line="144" selection-end-column="33" />
+              <caret line="144" column="33" selection-start-line="0" selection-start-column="0" selection-end-line="153" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="quotation.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/quotation.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.5179949">
+              <caret line="193" column="77" selection-start-line="193" selection-start-column="77" selection-end-line="193" selection-end-column="77" />
               <folding />
             </state>
           </provider>
@@ -136,6 +145,7 @@
         <option value="$PROJECT_DIR$/Company－View(HR).html" />
         <option value="$PROJECT_DIR$/hr-main.html" />
         <option value="$PROJECT_DIR$/style.less" />
+        <option value="$PROJECT_DIR$/quotation.html" />
       </list>
     </option>
   </component>
@@ -334,8 +344,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="34" column="24" selection-start-line="34" selection-start-column="24" selection-end-line="34" selection-end-column="24" />
           <folding>
-            <element signature="e#12324#13509#0" expanded="false" />
-            <element signature="e#13529#14397#0" expanded="false" />
+            <element signature="e#13712#14580#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -453,19 +462,26 @@
     <entry file="file://$PROJECT_DIR$/hr-main.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-23.041666">
-          <caret line="144" column="33" selection-start-line="144" selection-start-column="33" selection-end-line="144" selection-end-column="33" />
+          <caret line="144" column="33" selection-start-line="0" selection-start-column="0" selection-end-line="153" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/style.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.20951156">
-          <caret line="760" column="19" selection-start-line="760" selection-start-column="19" selection-end-line="760" selection-end-column="19" />
+        <state vertical-scroll-proportion="-20.625">
+          <caret line="717" column="16" selection-start-line="717" selection-start-column="16" selection-end-line="717" selection-end-column="16" />
           <folding>
-            <element signature="e#12324#13509#0" expanded="false" />
-            <element signature="e#13529#14397#0" expanded="false" />
+            <element signature="e#13712#14580#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/quotation.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5179949">
+          <caret line="193" column="77" selection-start-line="193" selection-start-column="77" selection-end-line="193" selection-end-column="77" />
+          <folding />
         </state>
       </provider>
     </entry>

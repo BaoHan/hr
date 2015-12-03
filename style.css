@@ -625,6 +625,10 @@ a:hover {
   overflow: hidden;
   margin: 0 -15px;
 }
+.dashboard .left .header .title {
+  font-size: 24px;
+  font-weight: bold;
+}
 .dashboard .left .header .infoinfo {
   margin-left: 120px;
 }
@@ -682,6 +686,13 @@ a:hover {
 .dashboard .left .header .user-info span a:hover {
   color: #333;
   border-color: #333;
+}
+.dashboard .left .table {
+  margin-top: 20px;
+}
+.dashboard .left form {
+  overflow: hidden;
+  margin-bottom: 20px;
 }
 .dashboard .left .dashboard-menu {
   margin: 20px 0;

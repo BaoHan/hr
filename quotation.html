@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="zh-CN" ng-app="myApp">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>BIGLUOBO</title>
+
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.min.js"></script>
+    <script src="http://cdn.bootcss.com/angular-ui-bootstrap/0.14.3/ui-bootstrap-tpls.min.js"></script>
+    <script src="app.js"></script>
+
+    <link href="http://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-3" ng-click="isCollapsed = !isCollapsed">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Brand</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li class="active" ><a href="#">首页</a></li>
+                <li><a href="#">职位</a></li>
+                <li><a href="#">兔子</a></li>
+                <li><a href="#">企业合作</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown" uib-dropdown>
+                    <a role="button" id="simple-dropdown" class="dropdown-toggle" uib-dropdown-toggle>
+                        <img src="img/avatar.jpg" alt="" class="avatar img-circle" width="30"/> hr@bigluobo.com <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu uib-dropdown-menu" aria-labelledby="simple-dropdown">
+                        <li><a href="#">个人设置</a></li>
+                        <li><a href="#">公司主页</a></li>
+                        <li><a href="#">控制台</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+
+<div class="container">
+    <div class="content row dashboard">
+        <div class="col-md-9 left">
+            <div class="header">
+                <div class="title">招聘职位报价 <a href="" class="btn btn-primary pull-right"><i class="glyphicon glyphicon-plus"></i> 新增职位</a></div>
+            </div>
+                <table class="table table-striped table-hover">
+                    <thead>
+                        <tr>
+                            <td>#</td>
+                            <td>职位类别</td>
+                            <td>职位名称</td>
+                            <td>服务费用</td>
+                            <td>操作</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>
+                                <select name="" id="">
+                                    <option value="">CTO</option>
+                                    <option value="">CTO</option>
+                                </select>
+                            </td>
+                            <td>
+                                <input type="text" value="CTO"/>
+                            </td>
+                            <td>
+                                <input type="text" value="9999" disabled/>
+                            </td>
+                            <td>
+                                <a href="">删除</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>
+                                <select name="" id="">
+                                    <option value="">CTO</option>
+                                    <option value="">CTO</option>
+                                </select>
+                            </td>
+                            <td>
+                                <input type="text" value="CTO"/>
+                            </td>
+                            <td>
+                                <input type="text" value="9999" disabled/>
+                            </td>
+                            <td>
+                                <a href="">删除</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>
+                                <select name="" id="">
+                                    <option value="">CTO</option>
+                                    <option value="">CTO</option>
+                                </select>
+                            </td>
+                            <td>
+                                <input type="text" value="CTO"/>
+                            </td>
+                            <td>
+                                <input type="text" value="9999" disabled/>
+                            </td>
+                            <td>
+                                <a href="">删除</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>
+                                <select name="" id="">
+                                    <option value="">CTO</option>
+                                    <option value="">CTO</option>
+                                </select>
+                            </td>
+                            <td>
+                                <input type="text" value="CTO"/>
+                            </td>
+                            <td>
+                                <input type="text" value="9999" disabled/>
+                            </td>
+                            <td>
+                                <a href="">删除</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>
+                                <select name="" id="">
+                                    <option value="">CTO</option>
+                                    <option value="">CTO</option>
+                                </select>
+                            </td>
+                            <td>
+                                <input type="text" value="CTO"/>
+                            </td>
+                            <td>
+                                <input type="text" value="9999" disabled/>
+                            </td>
+                            <td>
+                                <a href="">删除</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>费用总计：<b><span class="unit">¥</span>987,490</b></p>
+            <hr/>
+            <form action="">
+                <div class="form-group">
+                    <label for="">联系人</label>
+                    <input type="text" class="form-control" id="" placeholder="请输入联系人">
+                </div>
+                <div class="form-group">
+                    <label for="">联系邮箱</label>
+                    <input type="email" class="form-control" id="" placeholder="请输入联系邮箱">
+                </div>
+                <div class="form-group">
+                    <label for="">联系电话</label>
+                    <input type="tel"class="form-control"  id="" placeholder="联系电话">
+                </div>
+                <div class="form-group">
+                    <label for="">备注</label>
+                    <textarea class="form-control" name="" id=""  rows="5"></textarea>
+                </div>
+                <div class="form-group">
+                    <p class="help-block pull-left">说明：我们会在提交后的2个工作日内联系您做进一步的沟通。并给出最后的准确报价。</p>
+                </div>
+                <button type="submit" class="btn btn-success btn-block btn-lg"><i class="glyphicon glyphicon-file"></i> 生成报价单</button>
+            </form>
+        </div>
+        <div class="col-md-3 right">
+            <h3>银行支付账号：</h3>
+            <p>户名：上海极聘网络科技有限公司</p>
+            <p>开户行：中国工商银行上海分行杨思支行</p>
+            <p>账号：1001076409000004945</p>
+            <hr/>
+            <h3>支付宝账号：</h3>
+            <p>账号名：sarah@bigluobo.com</p>
+            <p>账户名：上海极聘网络科技有限公司</p>
+
+        </div>
+
+    </div>
+</div>
+
+
+</body>
+</html>
