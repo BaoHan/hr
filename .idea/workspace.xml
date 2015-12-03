@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1b340ae0-a46e-4b2e-b3f3-567f8862954a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Company－View(HR).html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style.css" afterPath="$PROJECT_DIR$/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style.less" afterPath="$PROJECT_DIR$/style.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="hr.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -39,10 +37,10 @@
       <file leaf-file-name="style.less" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/style.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8264781">
-              <caret line="611" column="18" selection-start-line="611" selection-start-column="18" selection-end-line="611" selection-end-column="18" />
+            <state vertical-scroll-proportion="0.40231362">
+              <caret line="518" column="10" selection-start-line="518" selection-start-column="10" selection-end-line="518" selection-end-column="10" />
               <folding>
-                <element signature="e#11681#12211#0" expanded="false" />
+                <element signature="e#11649#12179#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -310,7 +308,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="34" column="24" selection-start-line="34" selection-start-column="24" selection-end-line="34" selection-end-column="24" />
           <folding>
-            <element signature="e#11681#12211#0" expanded="false" />
+            <element signature="e#11649#12179#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -424,10 +422,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/style.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8264781">
-          <caret line="611" column="18" selection-start-line="611" selection-start-column="18" selection-end-line="611" selection-end-column="18" />
+        <state vertical-scroll-proportion="0.40231362">
+          <caret line="518" column="10" selection-start-line="518" selection-start-column="10" selection-end-line="518" selection-end-column="10" />
           <folding>
-            <element signature="e#11681#12211#0" expanded="false" />
+            <element signature="e#11649#12179#0" expanded="false" />
           </folding>
         </state>
       </provider>
