@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="zh-CN" ng-app="myApp">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>BIGLUOBO</title>
+
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.min.js"></script>
+    <script src="http://cdn.bootcss.com/angular-ui-bootstrap/0.14.3/ui-bootstrap-tpls.min.js"></script>
+    <script src="app.js"></script>
+
+    <link href="http://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-3" ng-click="isCollapsed = !isCollapsed">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Brand</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li class="active" ><a href="#">首页</a></li>
+                <li><a href="#">职位</a></li>
+                <li><a href="#">兔子</a></li>
+                <li><a href="#">企业合作</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown" uib-dropdown>
+                    <a role="button" id="simple-dropdown" class="dropdown-toggle" uib-dropdown-toggle>
+                        <img src="img/avatar.jpg" alt="" class="avatar img-circle" width="30"/> hr@bigluobo.com <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu uib-dropdown-menu" aria-labelledby="simple-dropdown">
+                        <li><a href="#">个人设置</a></li>
+                        <li><a href="#">公司主页</a></li>
+                        <li><a href="#">控制台</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+
+<div class="container">
+    <div class="content hr-info">
+        <div class="header">
+                <img class="logo" src="img/company.jpg" width="100" alt=""/>
+                <!--<h3>种子招聘 <span class="verified"> <i class="glyphicon glyphicon-ok"></i>已认证</span></h3>-->
+                <div class="infoinfo">
+                    <h3>种子招聘 <a href="#" class="unverified"> <i class="glyphicon glyphicon-flash"></i>立即认证</a></h3>
+                    <ul class="tags">
+                        <li>技能培训</li>
+                        <li>五险一金</li>
+                        <li>岗位晋升</li>
+                        <li>通讯经贴</li>
+                        <li>交通技能</li>
+                        <li>技能培训</li>
+                    </ul>
+                </div>
+            </div>
+        <div class="hr-inner">
+            <div class="hr-info-nav">
+                <ul>
+                    <li class="active">
+                        <a href="#hr-1"><i class="glyphicon glyphicon-list-alt"></i> 基本信息</a>
+                    </li>
+                    <li>
+                        <a href="#hr-2"><i class="glyphicon glyphicon-pencil"></i> 企业介绍</a>
+                    </li>
+                    <li>
+                        <a href="#hr-3"><i class="glyphicon glyphicon-tent"></i> 产品介绍</a>
+                    </li>
+                    <li>
+                        <a href="#hr-4"><i class="glyphicon glyphicon-user"></i> 创始团队</a>
+                    </li>
+                    <li>
+                        <a href="#hr-5"><i class="glyphicon glyphicon-bullhorn"></i> 招聘职位(12)</a>
+                    </li>
+                </ul>
+                <!-- JiaThis Button BEGIN -->
+                <div class="jiathis_style pull-right">
+                    <span class="jiathis_txt">分享到：</span>
+                    <a class="jiathis_button_tsina"></a>
+                    <a class="jiathis_button_weixin"></a>
+                </div>
+                <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+                <!-- JiaThis Button END -->
+            </div>
+            <div class="hr-section" id="hr-1">
+                <div class="heading">基本信息 <a href="" class="pull-right">编辑</a></div>
+                <div class="inner">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p>企业名称：上海极聘网络科技有限公司</p>
+                            <p>企业网址：<a href="＃" target>http://baidu.com</a></p>
+                            <p>所在城市：中国 上海</p>
+                            <p>公司地址：<span class="empty">暂无</span></p>
+                            <p>所在领域：<span class="empty">暂无</span></p>
+                        </div>
+                        <div class="col-md-6">
+                            <p>融资阶段：天使轮</p>
+                            <p>投资机构：<span class="empty">－</span></p>
+                            <p>投资金额：100万</p>
+                            <p>企业规模：1-20人</p>
+                            <p>联系方式：Henry 021-55214545</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hr-section" id="hr-2">
+                <div class="heading">企业介绍 <a href="" class="pull-right">编辑</a></div>
+                <div class="inner">
+                    <div class="row">
+                        <div class="col-md-12 company-info">
+                            <p>调研宝（  www.diaoyanbao.com ）是一款自助型的网络调研系统（SaaS 平台），并
+                                成功获得了国家科技部创新基金的奖励。在这个系统上，它可以轻松帮您实现在线调研的全
+                                过程：自劢编辑调研问卷；通过各类社交渠道和秱劢设备发布问卷；在线即时查看和下载统
+                                计数据。基于十年以上调查/研究行业经验积累，天会调研宝封装了几十套专业问卷，其中
+                                包括多种题型、多种复杂问卷逡辑控制、专业问卷配额控制等，专业化程度非常高。调研宝
+                                与传统线下方式戒其他类似软件平台相比，使用调研宝可以大幅提升工作效率，</p>
+                        </div>
+                        <hr/>
+                        <div class="col-md-12 gallery">
+                            <ul>
+                                <li class="col-md-2">
+                                    <img src="http://placehold.it/200x200" alt="..." class="img-thumbnail img-responsive">
+                                </li>
+                                <li class="col-md-2">
+                                    <img src="http://placehold.it/200x200" alt="..." class="img-thumbnail img-responsive">
+                                </li>
+                                <li class="col-md-2">
+                                    <img src="http://placehold.it/200x200" alt="..." class="img-thumbnail img-responsive">
+                                </li>
+                                <li class="col-md-2">
+                                    <img src="http://placehold.it/200x200" alt="..." class="img-thumbnail img-responsive">
+                                </li>
+                                <li class="col-md-2">
+                                    <img src="http://placehold.it/200x200" alt="..." class="img-thumbnail img-responsive">
+                                </li>
+                                <li class="col-md-2">
+                                    <img src="http://placehold.it/200x200" alt="..." class="img-thumbnail img-responsive">
+                                </li>
+                                <li class="col-md-2">
+                                    <img src="http://placehold.it/200x200" alt="..." class="img-thumbnail img-responsive">
+                                </li>
+                                <li class="col-md-2">
+                                    <img src="http://placehold.it/200x200" alt="..." class="img-thumbnail img-responsive">
+                                </li>
+                                </li>
+                                <li class="col-md-2">
+                                    <img src="http://placehold.it/200x200" alt="..." class="img-thumbnail img-responsive">
+                                </li>
+                                <li class="col-md-2">
+                                    <img src="http://placehold.it/200x200" alt="..." class="img-thumbnail img-responsive">
+                                </li>
+                                <li class="col-md-2">
+                                    <img src="http://placehold.it/200x200" alt="..." class="img-thumbnail img-responsive">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hr-section" id="hr-3">
+                <div class="heading">产品介绍 <a href="" class="pull-right">编辑</a></div>
+                <div class="inner">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p>调研宝是中国领先的免费在线问卷调查平台。它由专业的市场研究人员设计，功能强大，并且具有零门槛操作的特色，是国内首款既满足专业人士又符合大众的在线问卷调查平台。</p>
+                            <p>调研宝一直秉承“让决策更高效”的理念来帮助企业了解自己、了解客户、了解市场，帮助客户更快速、更准确的做出决策。</p>
+                            <p>我们拥有一群充满激情和探索精神的人，使用创新的方法帮助企业搜集用户需求、态度和行为数据，挖掘其背后的商业价值，促进企业健康快速的发展。调研宝广泛使用于电子商务、快消、金融、汽车、IT/电信、人力资源等众多领域。</p>
+                            <p>上海天会皓闻信息科技有限公司成立于2006年，旗下除<调研宝>以外，还包括为国际和中国大型企业提供个案调查业务的<天会调查>。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hr-section" id="hr-4">
+                <div class="heading">创始团队 <a href="" class="pull-right">编辑</a></div>
+                <div class="inner">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p>调研宝是中国领先的免费在线问卷调查平台。它由专业的市场研究人员设计，功能强大，并且具有零门槛操作的特色，是国内首款既满足专业人士又符合大众的在线问卷调查平台。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hr-section" id="hr-5">
+                <div class="heading">招聘职位(12) <a href="" class="pull-right">编辑</a></div>
+                <div class="inner">
+                    <div class="row">
+                        <div class="col-md-12">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -12,6 +12,10 @@ a,
   -ms-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
 }
+a,
+a:hover {
+  text-decoration: none;
+}
 .navbar-default {
   background-color: #fff;
 }
@@ -475,4 +479,139 @@ a,
   text-align: center;
   font-size: 40px;
   float: right;
+}
+.hr-info {
+  box-shadow: none;
+  border: 0;
+}
+.hr-info .header {
+  padding: 20px;
+  background: #f5f5f5;
+  overflow: hidden;
+}
+.hr-info .header .infoinfo {
+  position: relative;
+  float: left;
+}
+.hr-info .header .logo {
+  border: 1px solid #eee;
+  float: left;
+  margin-right: 20px;
+}
+.hr-info .header h3 {
+  margin: 0;
+  margin-top: 15px;
+  float: left;
+  width: 100%;
+}
+.hr-info .header h3 .verified {
+  background: #489A1D ;
+  color: #fff;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+.hr-info .header h3 .unverified {
+  background: #eee;
+  color: #aaa;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 2px 4px;
+  border-radius: 4px;
+  cursor: pointer;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+.hr-info .header h3 .unverified:hover {
+  background: #fdfdfd;
+  color: #333;
+}
+.hr-info .header .tags {
+  margin: 0;
+  padding: 0;
+  float: left;
+  margin-top: 10px;
+}
+.hr-info .header .tags li {
+  margin: 0 5px 0 0;
+  list-style: none;
+  display: inline-block;
+  padding: 4px 6px;
+  background: #fff;
+  color: #aaa;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  cursor: pointer;
+}
+.hr-info .header .tags li:hover {
+  background: #489A1D ;
+  color: #fff;
+}
+.hr-info .hr-info-nav {
+  border-bottom: 1px solid #eee;
+  overflow: hidden;
+  background: #489A1D;
+}
+.hr-info .hr-info-nav ul {
+  margin: 0;
+  padding: 0;
+  float: left;
+}
+.hr-info .hr-info-nav ul li {
+  list-style: none;
+  display: inline-block;
+}
+.hr-info .hr-info-nav ul li a {
+  color: rgba(255, 255, 255, 0.5);
+  padding: 20px 20px;
+  display: block;
+}
+.hr-info .hr-info-nav ul li.active a,
+.hr-info .hr-info-nav ul li:hover a {
+  color: #fff;
+}
+.hr-info .hr-info-nav .jiathis_style {
+  padding: 20px;
+  color: #fff;
+}
+.hr-info .hr-section .heading {
+  background: #f5f5f5;
+  padding: 20px;
+}
+.hr-info .hr-section .inner {
+  padding: 20px;
+}
+.hr-info .hr-section p {
+  line-height: 1.7;
+  color: #666;
+}
+.hr-info .hr-section .gallery {
+  margin: 10px 0;
+}
+.hr-info .hr-section .gallery ul {
+  margin: 0;
+  padding: 0;
+}
+.hr-info .hr-section .gallery li {
+  list-style: none;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+.hr-info .hr-section .gallery li img {
+  cursor: pointer;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+.hr-info .hr-section .gallery li img:hover {
+  border-color: #489A1D;
 }
