@@ -68,8 +68,8 @@ a:hover {
 .register .nav li:focus a,
 .register .nav li.active > a {
   border: 0;
-  background: #5BBA2A;
-  color: #fff;
+  background: #fff;
+  color: #5BBA2A;
 }
 .register .tab-content {
   padding: 20px;
@@ -809,4 +809,32 @@ a:hover {
 }
 .dashboard .right p {
   margin: 0;
+}
+.job-search {
+  margin-top: 20px;
+}
+.job-search .form-group {
+  margin-right: 10px;
+}
+.job-detail-modal .nav {
+  margin: -15px;
+  margin-bottom: 15px;
+  padding-top: 5px;
+}
+.job-detail-modal .nav li {
+  width: 33.3333%;
+  text-align: center;
+}
+.job-detail-modal .nav li a {
+  color: #fff;
+}
+.job-detail-modal .nav-tabs > li.active > a,
+.job-detail-modal .nav-tabs > li > a:hover,
+.job-detail-modal .nav-tabs > li.active > a:hover,
+.job-detail-modal .nav-tabs > li.active > a:focus {
+  color: #333;
+}
+.job-detail-modal .tiny {
+  max-width: 50px;
+  display: inline-block;
 }

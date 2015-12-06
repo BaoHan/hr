@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="zh-CN" ng-app="myApp">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>BIGLUOBO</title>
+
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.min.js"></script>
+    <script src="http://cdn.bootcss.com/angular-ui-bootstrap/0.14.3/ui-bootstrap-tpls.min.js"></script>
+    <script src="app.js"></script>
+
+    <link href="http://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-3" ng-click="isCollapsed = !isCollapsed">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Brand</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li class="active" ><a href="#">首页</a></li>
+                <li><a href="#">职位</a></li>
+                <li><a href="#">兔子</a></li>
+                <li><a href="#">企业合作</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown" uib-dropdown>
+                    <a role="button" id="simple-dropdown" class="dropdown-toggle" uib-dropdown-toggle>
+                        <img src="img/avatar.jpg" alt="" class="avatar img-circle" width="30"/> hr@bigluobo.com <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu uib-dropdown-menu" aria-labelledby="simple-dropdown">
+                        <li><a href="#">个人设置</a></li>
+                        <li><a href="#">公司主页</a></li>
+                        <li><a href="#">控制台</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+
+<div class="container">
+    <div class="content row dashboard">
+        <div class="col-md-12 left">
+            <div class="header">
+                <div class="title">职位列表 <a href="" class="btn btn-primary pull-right"><i class="glyphicon glyphicon-plus"></i> 发布新职位</a></div>
+            </div>
+            <form action="" class="form-inline job-search pull-right">
+                <div class="form-group">
+                    <label for="">职位名称</label>
+                    <input type="text" class="form-control" id="" placeholder="">
+                </div>
+                <div class="form-group ">
+                    <label for="">状态</label>
+                    <select name="" id="" class="form-control">
+                        <option value="">已保存</option>
+                        <option value="">待审核</option>
+                        <option value="">已发布</option>
+                        <option value="">成功结束</option>
+                        <option value="">拒绝</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-success">搜索</button>
+            </form>
+            <hr class="btn-block"/>
+            <table class="table table-striped table-hover">
+                <thead>
+                <tr>
+                    <td>职位名称</td>
+                    <td>薪水</td>
+                    <td>城市</td>
+                    <td>工作年限</td>
+                    <td>学历要求</td>
+                    <td>发布日期</td>
+                    <td>招聘费用</td>
+                    <td>状态</td>
+                    <td>平台反馈</td>
+                    <td>操作</td>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>JAVA开发</td>
+                    <td>10K-20K</td>
+                    <td>上海</td>
+                    <td>3-5年</td>
+                    <td>专科</td>
+                    <td>2015-9-10</td>
+                    <td>3999</td>
+                    <td>已发布</td>
+                    <td>通过</td>
+                    <td>
+                        <a href="">编辑</a> ｜ <a>删除</a>
+                    </td>
+                    <div uib-collapse="!isCollapsed">
+                        <div class="well well-lg">Some content</div>
+                    </div>
+                </tr>
+                <tr>
+                    <td>JAVA开发</td>
+                    <td>10K-20K</td>
+                    <td>上海</td>
+                    <td>3-5年</td>
+                    <td>专科</td>
+                    <td>2015-9-10</td>
+                    <td>3999</td>
+                    <td>已发布</td>
+                    <td>通过</td>
+                    <td>
+                        <a href="" >编辑</a> ｜ <a>删除</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>JAVA开发</td>
+                    <td>10K-20K</td>
+                    <td>上海</td>
+                    <td>3-5年</td>
+                    <td>专科</td>
+                    <td>2015-9-10</td>
+                    <td>3999</td>
+                    <td>已发布</td>
+                    <td>通过</td>
+                    <td>
+                        <a href="" >编辑</a> ｜ <a>删除</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>JAVA开发</td>
+                    <td>10K-20K</td>
+                    <td>上海</td>
+                    <td>3-5年</td>
+                    <td>专科</td>
+                    <td>2015-9-10</td>
+                    <td>3999</td>
+                    <td>已发布</td>
+                    <td>通过</td>
+                    <td>
+                        <a href="" >编辑</a> ｜ <a>删除</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>JAVA开发</td>
+                    <td>10K-20K</td>
+                    <td>上海</td>
+                    <td>3-5年</td>
+                    <td>专科</td>
+                    <td>2015-9-10</td>
+                    <td>3999</td>
+                    <td>已发布</td>
+                    <td>通过</td>
+                    <td>
+                        <a href="" >编辑</a> ｜ <a>删除</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>JAVA开发</td>
+                    <td>10K-20K</td>
+                    <td>上海</td>
+                    <td>3-5年</td>
+                    <td>专科</td>
+                    <td>2015-9-10</td>
+                    <td>3999</td>
+                    <td>已发布</td>
+                    <td>通过</td>
+                    <td>
+                        <a href="" >编辑</a> ｜ <a>删除</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>JAVA开发</td>
+                    <td>10K-20K</td>
+                    <td>上海</td>
+                    <td>3-5年</td>
+                    <td>专科</td>
+                    <td>2015-9-10</td>
+                    <td>3999</td>
+                    <td>已发布</td>
+                    <td>通过</td>
+                    <td>
+                        <a href="">编辑</a> ｜ <a>删除</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>JAVA开发</td>
+                    <td>10K-20K</td>
+                    <td>上海</td>
+                    <td>3-5年</td>
+                    <td>专科</td>
+                    <td>2015-9-10</td>
+                    <td>3999</td>
+                    <td>已发布</td>
+                    <td>通过</td>
+                    <td>
+                        <a href="">编辑</a> ｜ <a>删除</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>JAVA开发</td>
+                    <td>10K-20K</td>
+                    <td>上海</td>
+                    <td>3-5年</td>
+                    <td>专科</td>
+                    <td>2015-9-10</td>
+                    <td>3999</td>
+                    <td>已发布</td>
+                    <td>通过</td>
+                    <td>
+                        <a href="">编辑</a> ｜ <a>删除</a>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>
